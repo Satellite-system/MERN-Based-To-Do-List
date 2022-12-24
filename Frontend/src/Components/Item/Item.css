@@ -1,6 +1,6 @@
 .Item{
    background-color: beige;
-   width: 30vw;
+   width: 32vw;
    margin-bottom: 2vh;
    /* margin-right: 2vw; */
    border-radius: 10px;
@@ -21,6 +21,11 @@
    margin-top: 1vh;
 }
 
+@media only screen and (max-width: 775px) {
+   .Item{
+      width: 38vw;
+   }
+}
 @media only screen and (max-width: 450px) {
    .Item {
      background-color: lightblue;
