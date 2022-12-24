@@ -6,6 +6,9 @@ const ListSchema = new Schema({
       type: String,
       required: true
    },
+   discription: {
+      type: String
+   },
    isCompleted: {
       type: Boolean,
       default: false

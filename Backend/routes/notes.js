@@ -17,7 +17,7 @@ router.get('/', async(req,res)=>{
 // post new Item /list/add
 router.post('/add', async(req, res) =>{
    try {
-      const {title} = req.body;
+      const {title, discription} = req.body;
 
       const errors = validationResult(req);
 
@@ -25,7 +25,8 @@ router.post('/add', async(req, res) =>{
          return res.status(400).json({ errors: errors.array() });
       }
       const list = new Item({
-         title
+         title,
+         discription
       })
 
       const savedItem = await list.save()   

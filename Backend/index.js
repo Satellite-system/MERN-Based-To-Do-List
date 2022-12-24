@@ -1,13 +1,15 @@
 const express = require('express');
 const router = express.Router();
 const connectToMongoose = require('./db.js');
+var cors = require('cors')
 
 //Connect to db
 connectToMongoose();
 
-const port = process.env.PORT | 3000 ;
+const port = process.env.PORT | 9000 ;
 const app = express();
 
+app.use(cors())
 //to enable to send json file
 app.use(express.json());
 
