@@ -1,0 +1,19 @@
+.header{
+   background-color: aquamarine;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   height: 12vh;
+   padding: 0 4vw;
+   align-items: center;
+}
+.header>h2{
+
+}
+.header>span>img{
+   height: 8vh;
+   width: auto;
+}
+.header>span:hover{
+   cursor: pointer;
+}

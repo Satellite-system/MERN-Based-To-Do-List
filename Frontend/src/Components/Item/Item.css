@@ -1,0 +1,40 @@
+.Item{
+   background-color: beige;
+   width: 30vw;
+   margin-bottom: 2vh;
+   /* margin-right: 2vw; */
+   border-radius: 10px;
+}
+.item_title{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0 10%;
+}
+.item_title>span:hover{
+   cursor: pointer;
+}
+
+.item_check{
+   align-content: flex-end;
+   background-color: rgb(222, 133, 133);
+   margin-top: 1vh;
+}
+
+@media only screen and (max-width: 450px) {
+   .Item {
+     background-color: lightblue;
+     width: 48vw;
+   }
+   .Item>p{
+      margin: 0 4%;
+   }
+ }
+@media only screen and (max-width: 375px) {
+   .Item {
+     width: 90vw;
+   }
+   .Item>p{
+      margin: 0 4%;
+   }
+ }
